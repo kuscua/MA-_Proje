@@ -1,5 +1,5 @@
 library(stringr)
-Events <- read.table("C:/Users/Serdar/Desktop/mba_MA_proje.csv", sep=";")
+Events <- read.table("https://raw.githubusercontent.com/kuscua/MA-_Proje/master/mba_MA_proje.csv", sep=";")
 head(Events)
 transactions <- str_split_fixed(Events$V1, ",", n = Inf)
 head(transactions[,1:10])#limited to 4 columns since from the fifth column there are no items
